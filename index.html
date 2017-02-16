@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Tickets</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>Welcome to<br><strong>Sheldon Cinema</strong></h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Select Movie Ticket(s):</h2>
+            </div>
+            <div class="panel-body">
+              <form id="ticket-calc">
+                <div class="form-group">
+                  <label for=age>Age:</label>
+                  <input type="text" id="age" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="time">Show Time:</label>
+                    <select id="time">
+                      <option value="13">1:00pm</option>
+                      <option value="16">4:00pm</option>
+                      <option value="19">7:00pm</option>
+                      <option value="21.5">9:30pm</option>
+                      <option value="24">12:00am</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                  <label for="movie-title">Movie:</label>
+                  <select id="movie-title">
+                    <option id="lego-batman">Lego Batman</option>
+                    <option id="lala-land">Lala Land</option>
+                    <option id="jaws">Jaws</option>
+                    <option id="the-patriot">The Patriot</option>
+                    <option id="big-daddy">Big Daddy</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="quantity">Quantity:</label>
+                  <input type="text" id="quantity" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-info form-control">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="ticket-price-display" class="panel panel-success">
+            <div class="panel-heading">
+              <h2 class="panel-title">Ticket(s) Price:</h2>
+            </div>
+            <div class="panel-body">
+              <h3></h3>
+              <ul id="ticket-info">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
